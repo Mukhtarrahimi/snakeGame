@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 #include <cstdlib>
 #include <ctime> 
 using namespace std;
@@ -29,6 +30,10 @@ void draw(){
         for(int j = 0; j < width; j++){
             if(j== 0)
                 cout << "*";
+            if(i == y && j == x)
+                cout << "0";
+            else if(i == fruitY && j == fruitX)
+                cout << "F";
             else
                 cout << " ";
             if(j == width - 1)
